@@ -30,4 +30,6 @@ Take a look at the following resources:
 
 ## Link to the project
 
+ The index page will be a statically generated page while the Pokemon details pages will be server-side rendered. 
+ We'll also use Tailwind CSS for styling the app.
 -   [Pokedex](https://nextjs-pokedex-with-tailwind-css.vercel.app/)
