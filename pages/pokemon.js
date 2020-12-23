@@ -15,9 +15,22 @@ export default function pokemon({ pokeman }) {
                 <span className="font-bold mr-2">Height:</span>
                 {pokeman.height}
             </p>
+            <p>
+                <span className="font-bold mr-2">Shiny:</span>
+                <img className="mx-auto" src={pokeman.sprites.front_shiny} alt={pokeman.name} />
+                <img className="mx-auto" src={pokeman.sprites.back_shiny} alt={pokeman.name} />
+            </p>
+            <h2 className="text-2xl mt-6 mb-2">Abilities</h2>
+            {pokeman.abilities.map((ability, index) => (
+                <p key="index">{ability.ability.name}</p>
+            ))}
             <h2 className="text-2xl mt-6 mb-2">Types</h2>
             {pokeman.types.map((type, index) => (
                 <p key="index">{type.type.name}</p>
+            ))}
+            <h2 className="text-2xl mt-6 mb-2">Moves</h2>
+            {pokeman.moves.map((move, index) => (
+                <p key="index">{move.move.name}</p>
             ))}
             <p className="mt-10 text-center">
                 <Link href="/">
